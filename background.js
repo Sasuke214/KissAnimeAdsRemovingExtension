@@ -1,4 +1,4 @@
-function logURL() {
+function blockURL() {
     return { cancel: true };
 }
 
