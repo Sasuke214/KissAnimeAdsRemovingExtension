@@ -1,0 +1,22 @@
+{
+  "name": "adremovalkissanime",
+  "version": "1.0.0",
+  "description": "It removes ads from kissanime website",
+  "background": {
+    "scripts": ["background.js"],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "deathsythe.png"
+  },
+  "permissions": [
+    "webRequest",
+    "webRequestBlocking",
+    "<all_urls>"
+  ],
+  "content_scripts": [{
+    "matches": ["https://kissanime.ru/*"],
+    "js": ["adblocker.js"]
+  }],
+  "manifest_version": 2
+}
