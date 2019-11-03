@@ -3,7 +3,7 @@ function blockURL() {
 }
 
 chrome.webRequest.onBeforeRequest.addListener(
-    logURL,
+    blockURL,
     {urls: [
         "https://ads.2mdnsys.com/*",
         "https://koindut.com/*",
